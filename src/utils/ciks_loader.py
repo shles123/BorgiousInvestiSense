@@ -1,9 +1,8 @@
 def load_ciks(file_path):
     ciks = []
     with open(file_path, 'r') as file:
-            for line in file:
-                cik, name = line.split(':')   
-                ciks.append(cik.strip())
+            for line in file:   
+                ciks.append(line.strip())
     return ciks
 
 
